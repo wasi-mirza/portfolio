@@ -23,6 +23,9 @@ export default function Header() {
             <a href="/blogs" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
               Blogs
             </a>
+            <a href="/contact" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+              Contact
+            </a>
           </div>
 
           {/* Mobile menu (future) */}
