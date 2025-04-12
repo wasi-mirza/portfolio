@@ -8,7 +8,7 @@ export default function Hero() {
       </p>
       <div className="flex gap-4">
         <a
-          href="#contact"
+          href="/contact"
           className="btn bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg transition"
         >
           Let’s Talk
@@ -16,7 +16,7 @@ export default function Hero() {
         <a
           href="/Wasi_Mirza_CV.pdf"
           download
-          className="btn border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg transition"
+          className="btn border border-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg transition"
         >
           Download CV
         </a>
