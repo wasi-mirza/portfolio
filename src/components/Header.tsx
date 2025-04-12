@@ -10,7 +10,9 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-            
+            <a href="/" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+              Home
+            </a>
           <a
               href="/about"
               className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
