@@ -1,27 +1,21 @@
+// src/App.tsx
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/home';
+import BlogsPage from './pages/blogs';
+import ProjectsPage from './pages/projects';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Experience from './components/Experience';
-import Articles from './components/Articles';
-import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-function App() {
+export default function App() {
   return (
-    <div className="font-sans text-gray-900 bg-white">
+    <>
       <Header />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Articles />
-        <Contact />
-      </main>
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/blogs" element={<BlogsPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
-
-export default App;
