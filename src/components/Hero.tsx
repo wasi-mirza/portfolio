@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // src/components/Hero.tsx
 export default function Hero() {
   return (
@@ -9,12 +11,12 @@ export default function Hero() {
         Senior Full Stack Software Engineer
       </p>
       <div className="flex gap-4">
-        <a
-          href="/contact"
+      <Link
+          to="/contact"
           className="btn bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg transition"
         >
           Let’s Talk
-        </a>
+        </Link>
         <a
           href="/portfolio/Wasi_Mirza_CV.pdf"
           download
