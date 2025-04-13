@@ -1,11 +1,11 @@
 // src/App.tsx
 import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/home';
-import BlogsPage from './pages/blogs';
-import ProjectsPage from './pages/projects';
+import HomePage from './pages/Home';
+import BlogsPage from './pages/Blogs';
+import ProjectsPage from './pages/Projects';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import AboutMe from './pages/aboutMe';
+import AboutMe from './pages/AboutMe';
 import ContactPage from './pages/contact';
 export default function App() {
   return (
