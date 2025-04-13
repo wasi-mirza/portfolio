@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/Home';
 import BlogsPage from './pages/Blogs';
 import ProjectsPage from './pages/Projects';
@@ -8,7 +8,7 @@ import AboutMe from './pages/AboutMe';
 import ContactPage from './pages/contact';
 export default function App() {
   return (
-    <>
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -18,6 +18,6 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
-    </>
+    </Router>
   );
 }
