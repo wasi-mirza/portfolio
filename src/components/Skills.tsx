@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaReact, FaNodeJs, FaGithub, FaMobileAlt, FaAndroid, FaMicrosoft, FaAmazon } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaGithub, FaAndroid, FaMicrosoft, FaAmazon } from "react-icons/fa";
 import {
   SiReact,
   SiTailwindcss,
@@ -135,7 +135,7 @@ export default function Skills() {
         </div>
       </div>
 
-      {Object.entries(skillCategories).map(([category, skills], i) => (
+      {Object.entries(skillCategories).map(([category, skills]) => (
         <div key={category} className="max-w-6xl mx-auto mb-16">
           <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">
             {category}
