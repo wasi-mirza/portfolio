@@ -1,5 +1,3 @@
-// src/components/About.tsx
-import { FaGithub, FaLinkedin, FaTwitter, FaMedium } from 'react-icons/fa';
 import wasi from '../assets/wasi.jpeg';
 export default function About() {
   return (
