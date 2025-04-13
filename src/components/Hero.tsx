@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // src/components/Hero.tsx
 export default function Hero() {
   return (
@@ -13,13 +15,13 @@ export default function Hero() {
         >
           Let’s Talk
         </a>
-        <a
-          href="/Wasi_Mirza_CV.pdf"
+        <Link
+          to="/Wasi_Mirza_CV.pdf"
           download
           className="btn border border-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg transition"
         >
           Download CV
-        </a>
+        </Link>
       </div>
     </section>
   );
