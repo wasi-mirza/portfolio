@@ -1,33 +1,50 @@
+import { Link } from 'react-router-dom';
+
 export default function Header() {
   return (
     <header className="fixed w-full top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 shadow-sm">
       <nav className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a href="/" className="text-2xl font-bold text-primary tracking-tight hover:scale-105 transition-transform">
+          <Link
+            to="/"
+            className="text-2xl font-bold text-primary tracking-tight hover:scale-105 transition-transform"
+          >
             Wasi<span className="text-primary-hover">.</span>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8 text-sm font-medium">
-            <a href="/" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+            <Link
+              to="/"
+              className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+            >
               Home
-            </a>
-          <a
-              href="/about"
+            </Link>
+            <Link
+              to="/about"
               className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
             >
               About
-            </a>
-            <a href="/projects" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+            </Link>
+            <Link
+              to="/projects"
+              className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+            >
               Projects
-            </a>
-            <a href="/blogs" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+            </Link>
+            <Link
+              to="/blogs"
+              className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+            >
               Blogs
-            </a>
-            <a href="/contact" className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors">
+            </Link>
+            <Link
+              to="/contact"
+              className="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+            >
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu (future) */}
