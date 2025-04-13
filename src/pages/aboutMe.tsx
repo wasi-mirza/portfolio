@@ -153,6 +153,17 @@ export default function AboutMe() {
                 </a>{" "}
                 – Hotel guest management system.
               </li>
+              <li>
+                <a
+                  href="https://www.sonavanelegal.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  Sonavane Legal Associates
+                </a>{" "}
+                – Law firm website.
+              </li>
             </ul>
           </div>
         </div>
