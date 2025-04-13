@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://wasi-mirza.github.io/portfolio",
   "scripts": {
     "dev": "vite",
-    "homepage": "https://wasi-mirza.github.io/portfolio",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
