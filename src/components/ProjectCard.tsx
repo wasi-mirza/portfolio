@@ -2,7 +2,6 @@ type ProjectCardProps = {
     title: string;
     description: string;
     tech: string[];
-    image: string;
     link: string;
   };
   
@@ -10,7 +9,6 @@ type ProjectCardProps = {
     title,
     description,
     tech,
-    image,
     link,
   }: ProjectCardProps) {
     return (
@@ -20,12 +18,6 @@ type ProjectCardProps = {
         rel="noopener noreferrer"
         className="group bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
       >
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-  
         <div className="p-6">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition">
             {title}

@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { skills } from "../data/skills";
+
 export default function AboutMe() {
   return (
     <section className="bg-slate-50 dark:bg-slate-900 px-6 py-24 text-center">
@@ -8,24 +11,22 @@ export default function AboutMe() {
       <div className="max-w-4xl mx-auto text-left space-y-8">
         {/* Bio */}
         <p className="text-lg text-gray-700 dark:text-gray-300">
-          I am <strong>Wasi Mirza</strong>, working as <strong>Senior Software Engineer</strong> @ Enerscript Technologies. I'm a Fullstack Developer with a strong background in building scalable mobile and web applications.
-          I hold a Bachelor's degree in Computer Applications from <strong>Savitribai Phule Pune University</strong> with a focus on UI/UX, frontend development, and system design.
+          I am <strong>Wasi Mirza</strong>, working as{" "}
+          <strong>Senior Software Engineer</strong> @ Enerscript Technologies.
+          I'm a Fullstack Developer with a strong background in building
+          scalable mobile and web applications. I hold a Bachelor's degree in
+          Computer Applications from{" "}
+          <strong>Savitribai Phule Pune University</strong> with a focus on
+          UI/UX, frontend development, and system design.
         </p>
 
         {/* Skill Stack */}
         <div>
-          <h2 className="text-2xl font-semibold text-primary mb-4">Skills & Stack</h2>
+          <h2 className="text-2xl font-semibold text-primary mb-4">
+            Skills & Stack
+          </h2>
           <div className="flex flex-wrap gap-4">
-            {[
-              'React JS',
-              'Next JS',
-              'Node JS',
-              'React Native',
-              'MongoDB',
-              'MERN/MEAN Stack',
-              'Wordpress',
-              'HTML/CSS',
-            ].map((skill) => (
+            {skills.map((skill) => (
               <span
                 key={skill}
                 className="bg-primary/10 text-primary px-4 py-2 rounded-full"
@@ -38,10 +39,22 @@ export default function AboutMe() {
 
         {/* Projects */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-semibold text-primary">Notable Projects</h2>
+          <div className="flex items-center justify-between">
+            <h2 className="text-2xl font-semibold text-primary">
+              Notable Projects
+            </h2>
+            <Link
+              to="/projects"
+              className="text-sm text-primary hover:underline font-medium"
+            >
+              View All →
+            </Link>
+          </div>
 
           <div>
-            <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-2">📱 Mobile App Development</h3>
+            <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-2">
+              📱 Mobile App Development
+            </h3>
             <ul className="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
               <li>
                 <a
@@ -51,7 +64,7 @@ export default function AboutMe() {
                   className="text-primary hover:underline"
                 >
                   Club Mahindra Holidays App
-                </a>{' '}
+                </a>{" "}
                 – Main app for bookings & member services.
               </li>
               <li>
@@ -62,7 +75,7 @@ export default function AboutMe() {
                   className="text-primary hover:underline"
                 >
                   Making Magical App
-                </a>{' '}
+                </a>{" "}
                 – Idea submission platform.
               </li>
               <li>
@@ -73,7 +86,7 @@ export default function AboutMe() {
                   className="text-primary hover:underline"
                 >
                   OPC App
-                </a>{' '}
+                </a>{" "}
                 – Mobile app for on-property check-ins.
               </li>
               <li>
@@ -84,7 +97,7 @@ export default function AboutMe() {
                   className="text-primary hover:underline"
                 >
                   RateMe App
-                </a>{' '}
+                </a>{" "}
                 – Performance review mobile app.
               </li>
               <li>
@@ -95,7 +108,7 @@ export default function AboutMe() {
                   className="text-primary hover:underline"
                 >
                   Notess (React Native)
-                </a>{' '}
+                </a>{" "}
                 – Personal note-taking & productivity app.
               </li>
               <li>iConcile – Aircraft management app.</li>
@@ -103,7 +116,9 @@ export default function AboutMe() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-2">💻 Web App Development</h3>
+            <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-2">
+              💻 Web App Development
+            </h3>
             <ul className="list-disc ml-6 text-gray-700 dark:text-gray-300 space-y-1">
               <li>
                 <a
@@ -113,7 +128,7 @@ export default function AboutMe() {
                   className="text-primary hover:underline"
                 >
                   RateMe Web App
-                </a>{' '}
+                </a>{" "}
                 – Web version of the review platform.
               </li>
               <li>
@@ -124,7 +139,7 @@ export default function AboutMe() {
                   className="text-primary hover:underline"
                 >
                   Appraisal 360 AI
-                </a>{' '}
+                </a>{" "}
                 – AI-driven employee evaluation platform.
               </li>
               <li>
@@ -135,7 +150,7 @@ export default function AboutMe() {
                   className="text-primary hover:underline"
                 >
                   Atithi
-                </a>{' '}
+                </a>{" "}
                 – Hotel guest management system.
               </li>
             </ul>
@@ -144,13 +159,16 @@ export default function AboutMe() {
 
         {/* Personality */}
         <p className="text-lg text-gray-700 dark:text-gray-300">
-          I enjoy leading and building projects from scratch, owning full responsibility, and ensuring high performance, accessibility, and user experience — whether working solo or in a team.
+          I enjoy leading and building projects from scratch, owning full
+          responsibility, and ensuring high performance, accessibility, and user
+          experience — whether working solo or in a team.
         </p>
 
         <p className="text-lg text-gray-700 dark:text-gray-300">
-          I regularly share my learnings on <strong>Medium</strong> and my personal blog. I also post tech thoughts and insights on platforms like LinkedIn, Instagram, and Twitter.
+          I regularly share my learnings on <strong>Medium</strong> and my
+          personal blog. I also post tech thoughts and insights on platforms
+          like LinkedIn, Instagram, and Twitter.
         </p>
-
       </div>
     </section>
   );
