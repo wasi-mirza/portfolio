@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { FaReact, FaNodeJs, FaGithub, FaAndroid, FaMicrosoft, FaAmazon } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaGithub,
+  FaAndroid,
+  FaMicrosoft,
+  FaAmazon,
+} from "react-icons/fa";
 import {
   SiReact,
   SiTailwindcss,
@@ -121,7 +128,6 @@ export default function Skills() {
       },
     ],
   };
-  
 
   return (
     <section id="skills" className="bg-slate-50 dark:bg-slate-900 px-6 py-24">

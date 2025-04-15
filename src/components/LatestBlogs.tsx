@@ -1,9 +1,8 @@
 // src/components/LatestBlogs.tsx
-import { Link } from 'react-router-dom'; // or use <a> if using Next.js or anchor routing
-import { blogs } from '../data/blogs';
-import BlogCard from './BlogCard';
+import { Link } from "react-router-dom"; // or use <a> if using Next.js or anchor routing
+import { blogs } from "../data/blogs";
+import BlogCard from "./BlogCard";
 export default function LatestBlogs() {
-
   return (
     <section className="px-6 py-24 max-w-6xl mx-auto text-center">
       <h2 className="text-4xl md:text-5xl font-bold mb-16 text-gray-900 dark:text-white">
@@ -11,7 +10,7 @@ export default function LatestBlogs() {
       </h2>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
-      {blogs.slice(0, 3).map((blog, i) => (
+        {blogs.slice(0, 3).map((blog, i) => (
           <BlogCard key={i} {...blog} />
         ))}
       </div>

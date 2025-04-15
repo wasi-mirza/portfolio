@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { testimonials } from "../data/testimonials";
 import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from "react-icons/fa";
-  
-  export default function Testimonials() {
-   
-    
+
+export default function Testimonials() {
   const [index, setIndex] = useState(0);
   const total = testimonials.length;
 

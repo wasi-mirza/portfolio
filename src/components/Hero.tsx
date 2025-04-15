@@ -11,7 +11,7 @@ export default function Hero() {
         Senior Full Stack Software Engineer
       </p>
       <div className="flex gap-4">
-      <Link
+        <Link
           to="/contact"
           className="btn bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg transition"
         >
