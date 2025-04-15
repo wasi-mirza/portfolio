@@ -52,6 +52,6 @@ export const projects = [
     title: "Atithi Hotel System",
     description: "Hotel guest management web app used by multiple properties.",
     tech: ["React", "Node.js", "MongoDB", "Prisma", "GraphQL", "TypeScript", "Styled Components", "Amazon AWS"],
-    link: "https://guest.atithi.app/hotel",
+    link: "https://atithi.app/",
   },
 ];

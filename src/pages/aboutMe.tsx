@@ -144,7 +144,7 @@ export default function AboutMe() {
               </li>
               <li>
                 <a
-                  href="https://guest.atithi.app/hotel"
+                  href="https://atithi.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
