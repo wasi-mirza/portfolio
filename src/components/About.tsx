@@ -1,4 +1,4 @@
-import wasi from "../assets/wasi.jpeg";
+import wasi from "../assets/workspace_wasi.png";
 
 export default function About() {
   return (
