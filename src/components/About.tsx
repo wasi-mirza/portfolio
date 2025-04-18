@@ -1,5 +1,5 @@
 import wasi from "../assets/workspace_wasi.png";
-
+import wasiVideo from "../assets/videos/wasi3d.mp4";
 export default function About() {
   return (
     <section
@@ -11,14 +11,6 @@ export default function About() {
       </h2>
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        {/* Profile Image */}
-        <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden shadow-lg animate-fadeInLeft">
-          <img
-            src={wasi}
-            alt="Wasi Mirza"
-            className="w-full h-full object-cover"
-          />
-        </div>
 
         {/* About Text */}
         <div className="flex-1 text-left animate-fadeInRight">
@@ -42,6 +34,11 @@ export default function About() {
             businesses to bring their visions to life with clean, maintainable
             code and thoughtful design.
           </p>
+        </div>
+        {/* Profile Video */}
+        <div className="w-80 h-80 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg animate-fadeInLeft">
+          <video src={wasiVideo} autoPlay loop muted className="w-full h-full object-cover" />
+
         </div>
       </div>
     </section>
