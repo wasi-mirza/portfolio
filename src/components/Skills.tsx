@@ -21,10 +21,12 @@ import {
 } from "react-icons/si";
 import { useRive } from "@rive-app/react-canvas";
 import { RiNextjsFill } from "react-icons/ri";
+//@ts-ignore
+import developer from "../../public/animations/developer.riv";
 
 export default function Skills() {
   const { RiveComponent } = useRive({
-    src: `${import.meta.env.BASE_URL}/animations/developer.riv`,
+    src: developer,
     autoplay: true,
   });
 
